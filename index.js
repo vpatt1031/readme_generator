@@ -18,28 +18,22 @@ inquirer
         type: "list",
         message: `Which License are you utilizing? `,
         name: "license",
-        choices: ["MIT", "Apache", "Eclipse"]
-    },
-    {
-        type: 'list',
-        name: "table of contents",
-        message: 'Click to go to each section ',
-        choices: ['Title', 'Description', 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions']
+        choices: ["MIT", "Apache", "Eclipse", "Mozilla", "No license provided"]
     },
     {
         type: 'input',
         message: 'Enter the installation information for this project',
-        name: 'installation'
+        name: 'installation',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Enter the usage information for this project'
+        message: 'Enter the usage information for this project',
     },
     {
         type: 'input',
         name: 'contributing',
-        message: 'Enter contributing information for this project'
+        message: 'Enter contributing information for this project',
     },
     {
         type: 'input',

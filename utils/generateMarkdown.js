@@ -1,26 +1,27 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
+// TODO: Create a function that returns the license section of README
+// TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let value;
 
   if(license == "Eclipse"){
     value = "[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)"
-  } else{
-    value = 'No license provided.'
-  }
-  if(license == "MIT"){
-    value = "[![License]"
-  }else{
-    value = 'No license provided.'
+  }else if(license == `MIT`){
+    value = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+  }else if(license == `Apache`){
+    value = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+  }else if(license == `Mozilla`){
+    value = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+  }else if(license == "No license provided"){
+    value = ``
   }
 
   return value
 }
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
-// TODO: Create a function that returns the license section of README
+
+
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
@@ -38,7 +39,13 @@ ${data.description}
 ${licenseBadge}
 
 ## Table of Contents
-//need to figure out how to link the table of contents to each section
+
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
 
 ## Installation
 
@@ -57,10 +64,11 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
+Questions can be sent by clicking on the email below.
 
-<${data.github}>
+GitHub Account: github.com/${data.github}
 
-<${data.email}>
+Email: ${data.email}
 `;
 }
 

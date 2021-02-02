@@ -1,33 +1,41 @@
-# me too
+# The README Generator
 
 ## Description
 
-me too
+This project produces a README file.
 
 ## License
 
-[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Table of Contents
-//need to figure out how to link the table of contents to each section
+
+
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+
 
 ## Installation
 
-none
+No installation required.
 
 ## Usage
 
-none
+Enter node index.js
 
 ## Contributions
 
-none
+No other contributors
 
 ## Tests
 
-none
+No tests
 
 ## Questions
+Questions can be sent by clicking on the email below.
 
-vpatt1031
-vpatt1031@gmail.com
+GitHub Account: github.com/vpatt1031
+
+Email: vpatt1031@gmail.com
